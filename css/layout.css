@@ -33,7 +33,12 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: 
+      linear-gradient(
+         rgba(77, 76, 76, 0.5),
+         rgba(77, 76, 76, 0.5)
+      ),
+   #161415 url(../images/header-background.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -52,7 +57,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -66,7 +71,7 @@ header .banner-text h1 {
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   color: #ffff;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
@@ -78,8 +83,8 @@ header .banner-text h3 a {
 header .banner-text hr {
    width: 60%;
    margin: 18px auto 24px auto;
-   border-color: #2F2D2E;
-   border-color: rgba(150, 150, 150, .1);
+   border-color: #f8f6f7;
+   border-color: rgba(255, 255, 255, 0.1);
 }
 
 /* header social links */
@@ -179,7 +184,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #18cbd1; }
 
 
 /* ------------------------------------------------------------------ */
@@ -256,6 +261,9 @@ ul#nav li.current a { color: #F06000; }
 }
 #resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
+}
+#resume h4 {
+   font: 18px/23px 'opensans-bold', sans-serif;
 }
 
 #resume .header-col { padding-top: 9px; }
@@ -342,19 +350,19 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .csharp {
-  width: 35%;
+  width: 75%;
   -moz-animation: csharp 2s ease;
   -webkit-animation: csharp 2s ease;
 }
 
 @-moz-keyframes csharp {
 0%   { width: 0px;  }
-100% { width: 35%;  }
+100% { width: 75%;  }
 }
 
 @-webkit-keyframes csharp {
 0%   { width: 0px;  }
-100% { width: 35%;  }
+100% { width: 75%;  }
 }
 
 .visualbasic {
@@ -984,5 +992,5 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+#go-top a:hover { background-color: #18cbd1; }
 
